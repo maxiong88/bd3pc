@@ -257,9 +257,9 @@ a,div,button {
 }
 
 .MD-header-box a.nav-0{
-    margin-left: 104px;
+    margin-left: 122px;
 }
-.MD-header-box a.nav-0 .hed-tit{
+.MD-header-box a.nav-4 .hed-tit{
     height: 18px;
     width: 116px;
     background: url(../img/home_nav_tong.png) no-repeat;
@@ -268,7 +268,7 @@ a,div,button {
     margin-top: 20px;
 }
 .MD-header-box a.nav-1{
-    margin-left: 45px;
+    margin-left: 68px;
 }
 .MD-header-box a.nav-1 .hed-tit{
     height: 19px;
@@ -279,7 +279,7 @@ a,div,button {
     margin-top: 19px;    
 }
 .MD-header-box a.nav-2{
-    margin-left: 58px;
+    margin-left: 55px;
 }
 .MD-header-box a.nav-2 .hed-tit{
     height: 17px;
@@ -301,9 +301,9 @@ a,div,button {
     margin-top: 20px;
 }
 .MD-header-box a.nav-4{
-    margin-left: 53px;
+    margin-left: 38px;
 }
-.MD-header-box a.nav-4 .hed-tit{
+.MD-header-box a.nav-0 .hed-tit{
     height: 19px;
     width: 78px;
     cursor: pointer;
@@ -312,7 +312,7 @@ a,div,button {
     margin-top: 19px;
 }
 .MD-header-box a.nav-5{
-    margin-left: 60px;
+    margin-left: 39px;
 }
 .MD-header-box a.nav-5 .hed-tit{
     height: 18px;
