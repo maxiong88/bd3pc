@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        崩塌3-队伍推荐
+    </title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta charset="utf-8">
+    <!--项目meta信息，请编辑提供 start-->
+    <meta name="applicable-device" content="PC">
+    <!--项目meta信息，请编辑提供 end-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link type="text/css" rel="stylesheet" href="./static/css/index.css?t=1234567890" media="all">
+</head>
+<body>
+    <div class="container">
+        <div class="home-partKv">
+            <img src="./upload/banner_home.jpg" alt="">
+        </div>
+        <div class="header">
+            <div class="w1024 MD-header-box">
+                    <a href="./team-recommen.html" class="nav-0"  target="_blank">
+                        <span class="hed-tit">通关队伍推荐</span>
+                        <span class="hed-i"></span>
+                    </a>
+                    <a href="./valk.html" class="nav-1"  target="_blank">
+                        <span class="hed-tit">女武神资料</span>
+                        <span class="hed-i"></span>
+                    </a>
+                    <a href="arms-list.html" class="nav-2" target="_blank">
+                        <span class="hed-tit">武器大全</span>
+                        <span class="hed-i"></span>
+                    </a>
+                    <a href="./arms-list.html" class="nav-3"  target="_blank">
+                        <span class="hed-tit">圣痕资料</span>
+                        <span class="hed-i"></span>
+                    </a>
+                    <a href="./article-list.html" class="nav-4" target="_blank">
+                        <span class="hed-tit">资讯攻略</span>
+                        <span class="hed-i"></span>
+                    </a>
+                    <a href="./fleet-list.html" class="nav-5"  target="_blank">
+                        <span class="hed-tit">舰队招募</span>
+                        <span class="hed-i"></span>
+                    </a> 
+                <div class="login-in-out">
+                    <a href="javascript:;" title="登录" class="login-in" id="_js_login_in">登录</a>
+                    <a href="javascript:;" title="注册" class="login-reg" id="_js_login_reg">注册</a>
+                </div>              
+            </div>
+        </div>
+        <div class="valk-recommend-box">
+            <div class="common-hed-h2">
+                <img src="./static/img/team/chuangjian.png" alt="" width="121" height="20">
+            </div>
+            <div class="w1024">
+                    <form id="addForm" action="/ap/team/doadd" method="post">
+                <div class="valk-recommend-con valk-recommend-con-a">
+                    <div class="form-item-0 form-item-1">
+                        <i class="icon"></i>
+                        <span class="tit">推荐标题</span>
+                        <input type="text" id="recommendTitle" placeholder="例如：扩冰队阵容推荐" value="马雄的推荐队伍">
+                    </div>
+                    <div class="form-item-0 form-item-2">
+                        <i class="icon"></i>
+                        <span class="tit">游戏模式</span>
+                        <!-- 这里开始 -->
+                        <div class="filter-box filter-box-3">
+                            <input type="hidden" id="_js_moshi_a_0">
+                            <div class="filter-text">
+                                <input class="filter-title" type="text" readonly placeholder="请选择" />
+                                <i class="icon-filter-arrow"></i>
+                            </div>
+                            <select name="filter">
+                                <!--php 渲染的时候需要添加一个默认值，就是要把 其中一个option 添加selected属性-->
+                                <option value="1" selected>单机模式</option>
+                                <option value="2">双击模式</option>
+                            </select>
+                        </div>  
+                        <!-- 这里结束 -->
+                    </div>
+                    <div class="form-item-0 form-item-3">
+                        <i class="icon"></i>
+                        <span class="tit">适用场景 </span>      
+                        <!-- 这里开始 -->
+                        <div class="filter-box filter-box-1">
+                            <input type="hidden" id="_js_changjing_a_0">
+                            <div class="filter-text">
+                                <input class="filter-title" type="text" readonly placeholder="选择场景" />
+                                <i class="icon-filter-arrow"></i>
+                            </div>
+                            <select name="filter">
+                                <option value="58" selected>记忆战场</option>
+                                <option value="30">独立作战 - 外传</option>
+                                <option value="12">联机模式 - 一般</option>
+                                <option value="2">联合作战 - Raid</option>
+                                <option value="1">无尽深渊</option>
+                            </select>
+                        </div>    
+                        <!-- 这里结束 -->
+                        <!-- 这里开始 -->
+                        <div class="filter-box filter-box-2">
+                            <input type="hidden" id="_js_changjing_a_1">
+                            <div class="filter-text">
+                                <input class="filter-title" type="text" readonly placeholder="选择楼层" />
+                                <i class="icon-filter-arrow"></i>
+                            </div>
+                            <select name="filter"> </select>
+                        </div>  
+                        <!-- 这里结束 -->
+                    </div>
+                    <div class="form-item-0 form-item-4">
+                        <i class="icon"></i>
+                        <span class="tit">视频链接</span>
+                        <input type="text" placeholder="选填" id="videoId">
+                    </div>
+                    <div class="form-item-0 form-item-5">
+                        <i class="icon"></i>
+                        <span class="tit">队伍说明</span>
+                        <textarea name="" id="explainMsg" placeholder="选填"></textarea>
+                    </div>            
+                    <img src="./static/img/valk/duiwu1.png" alt="" class="valk-icon-top">
+                    <img src="./static/img/valk/duiwu1info.png" alt="" class="valk-icon-bottom">
+                </div>
+                <!--队长-->
+                <div class="valk-recommend-con valk-recommend-con-b">
+                    <div class="form-item-0 form-item-1">
+                        <i class="icon"></i>
+                        <span class="tit">选择队长</span>
+                        <input type="hidden" id="selMember1Id" name="capt_valk_id">
+                        <input type="text" id="selMember1" placeholder="例如：扩冰队阵容推荐" readonly>
+                        <i class="icon1"></i>
+                        <div class="input-div" data-selme="1,1"></div>
+                    </div>
+                    <div class="form-item-0 form-item-2">
+                        <i class="icon"></i>
+                        <span class="tit">角色评级</span>
+                        <!-- 这里开始 -->
+                        <div class="filter-box filter-box-4">
+                            <input type="hidden" id="_js_juese_a_1" name="capt_valk_data_catid">
+                            <!-- <input type="hidden" id="_js_juese_a_1_id" name="capt_valk_data_catid"> -->
+                            <div class="filter-text">
+                                <input class="filter-title" type="text" readonly placeholder="请选择" />
+                                <i class="icon-filter-arrow"></i>
+                            </div>
+                            <select name="filter">
+                                <option value='1' selected>b</option>
+                                <option value='2'>a</option>
+                                <option value='3'>s</option>
+                                <option value='4'>ss</option>
+                                <option value='5'>sss</option>
+                            </select>
+                        </div>  
+                        <!-- 这里结束 -->
+                    </div>
+                    <div class="form-item-0 form-item-3">
+                        <i class="icon"></i>
+                        <span class="tit">使用武器 </span>
+                        <input type="hidden" name="capt_arm_id" id="shipName1Id">
+                        <input type="text" id="shipName1" placeholder="必填">
+                        <i class="icon1"></i>
+                        <div class="input-div" data-selme="1,2"></div>
+                    </div>
+                    <div class="form-item-0 form-item-4">
+                        <i class="icon"></i>
+                        <span class="tit">上位圣痕</span>
+                        <input type="hidden" name="capt_stig_hid" id="selsheng1_3Id">
+                        <input type="text" placeholder="选填" id="selsheng1_3" class="">
+                        <i class="icon1"></i>
+                        <div class="input-div" data-selme="1,3"></div>
+                    </div>
+                    <div class="form-item-0 form-item-5">
+                        <i class="icon"></i>
+                        <span class="tit">中位圣痕</span>
+                        <input type="hidden" name="capt_stig_mid" id="selsheng1_4Id">
+                        <input type="text" id="selsheng1_4" placeholder="选填">
+                        <i class="icon1"></i>
+                        <div class="input-div" data-selme="1,4"></div>
+                    </div>
+                    <div class="form-item-0 form-item-6">
+                        <i class="icon"></i>
+                        <input type="hidden" name="capt_stig_fid" id="selsheng1_5Id">
+                        <span class="tit">下位圣痕</span><input type="text" id="selsheng1_5" placeholder="选填">
+                        <i class="icon1"></i>
+                        <div class="input-div" data-selme="1,5"></div>
+                    </div>
+                    <img src="./static/img/valk/zuizhanginfo.png" alt="" class="valk-icon-top">
+                    <img src="./static/img/valk/duizhanginfo.png" alt="" class="valk-icon-bottom">
+                </div>
+                <!--队员1-->
+                <div class="valk-recommend-con valk-recommend-con-b">
+                    <div class="form-item-0 form-item-1">
+                        <i class="icon"></i>
+                        <span class="tit">选择队长</span>
+                        <input type="hidden" id="selMember2Id" name="memo_valk_id">
+                        <input type="text" id="selMember2" placeholder="例如：扩冰队阵容推荐" readonly>
+                        <i class="icon1"></i>
+                        <div class="input-div" data-selme="2,1"></div>
+                    </div>
+                    <div class="form-item-0 form-item-2">
+                        <i class="icon"></i>
+                        <span class="tit">角色评级</span>
+                        <!-- 这里开始 -->
+                        <div class="filter-box filter-box-5">
+                            <input type="hidden" id="_js_juese_a_2" name="memo_valk_data_catid">
+                            <div class="filter-text">
+                                <input class="filter-title" type="text" readonly placeholder="请选择" />
+                                <i class="icon-filter-arrow"></i>
+                            </div>
+                            <select name="filter">
+                                <option value='1' selected>b</option>
+                                <option value='2'>a</option>
+                                <option value='3'>s</option>
+                                <option value='4'>ss</option>
+                                <option value='5'>sss</option>
+                            </select>
+                        </div>  
+                        <!-- 这里结束 -->
+                    </div>
+                    <div class="form-item-0 form-item-3">
+                        <i class="icon"></i>
+                        <span class="tit">使用武器 </span>
+                        <input type="hidden" name="memo_arm_id" id="shipName2Id">
+                        <input type="text" id="shipName2" placeholder="必填">
+                        <i class="icon1"></i>
+                        <div class="input-div" data-selme="2,2"></div>
+                    </div>
+                    <div class="form-item-0 form-item-4">
+                        <i class="icon"></i>
+                        <span class="tit">上位圣痕</span>
+                        <input type="hidden" name="memo_stig_hid" id="selsheng2_3Id">
+                        <input type="text" placeholder="选填" id="selsheng2_3" class="">
+                        <i class="icon1"></i>
+                        <div class="input-div" data-selme="2,3"></div>
+                    </div>
+                    <div class="form-item-0 form-item-5">
+                        <i class="icon"></i>
+                        <span class="tit">中位圣痕</span>
+                        <input type="hidden" name="memo_stig_mid" id="selsheng2_4Id">
+                        <input type="text" id="selsheng2_4" placeholder="选填">
+                        <i class="icon1"></i>
+                        <div class="input-div" data-selme="2,4"></div>
+                    </div>
+                    <div class="form-item-0 form-item-6">
+                        <i class="icon"></i>
+                        <input type="hidden" name="memo_stig_fid" id="selsheng2_5Id">
+                        <span class="tit">下位圣痕</span><input type="text" id="selsheng2_5" placeholder="选填">
+                        <i class="icon1"></i>
+                        <div class="input-div" data-selme="2,5"></div>
+                    </div>
+                    <img src="./static/img/valk/duiyuan1.png" alt="" class="valk-icon-top">
+                    <img src="./static/img/valk/duiyuan1info.png" alt="" class="valk-icon-bottom">
+                </div>
+                <div class="valk-recommend-con valk-recommend-con-b">
+                    <div class="form-item-0 form-item-1">
+                        <i class="icon"></i>
+                        <span class="tit">选择队长</span>
+                        <input type="hidden" id="selMember3Id" name="memt_valk_id">
+                        <input type="text" id="selMember3" placeholder="例如：扩冰队阵容推荐" readonly>
+                        <i class="icon1"></i>
+                        <div class="input-div" data-selme="3,1"></div>
+                    </div>
+                    <div class="form-item-0 form-item-2">
+                        <i class="icon"></i>
+                        <span class="tit">角色评级</span>
+                        <!-- 这里开始 -->
+                        <div class="filter-box filter-box-6">
+                            <input type="hidden" id="_js_juese_a_3" name="memt_valk_data_catid">
+                            <div class="filter-text">
+                                <input class="filter-title" type="text" readonly placeholder="请选择" />
+                                <i class="icon-filter-arrow"></i>
+                            </div>
+                            <select name="filter">
+                                <option value='1' selected>b</option>
+                                <option value='2'>a</option>
+                                <option value='3'>s</option>
+                                <option value='4'>ss</option>
+                                <option value='5'>sss</option>
+                            </select>
+                        </div>  
+                        <!-- 这里结束 -->
+                    </div>
+                    <div class="form-item-0 form-item-3">
+                        <i class="icon"></i>
+                        <span class="tit">使用武器 </span>
+                        <input type="hidden" name="memt_arm_id" id="shipName3Id">
+                        <input type="text" id="shipName3" placeholder="必填">
+                        <i class="icon1"></i>
+                        <div class="input-div" data-selme="3,2"></div>
+                    </div>
+                    <div class="form-item-0 form-item-4">
+                        <i class="icon"></i>
+                        <span class="tit">上位圣痕</span>
+                        <input type="hidden" name="memt_stig_hid" id="selsheng3_3Id">
+                        <input type="text" placeholder="选填" id="selsheng3_3" class="">
+                        <i class="icon1"></i>
+                        <div class="input-div" data-selme="3,3"></div>
+                    </div>
+                    <div class="form-item-0 form-item-5">
+                        <i class="icon"></i>
+                        <span class="tit">中位圣痕</span>
+                        <input type="hidden" name="memt_stig_mid" id="selsheng3_4Id">
+                        <input type="text" id="selsheng3_4" placeholder="选填">
+                        <i class="icon1"></i>
+                        <div class="input-div" data-selme="3,4"></div>
+                    </div>
+                    <div class="form-item-0 form-item-6">
+                        <i class="icon"></i>
+                        <input type="hidden" name="memt_stig_fid" id="selsheng3_4Id">
+                        <span class="tit">下位圣痕</span><input type="text" id="selsheng3_5" placeholder="选填">
+                        <i class="icon1"></i>
+                        <div class="input-div" data-selme="3,5"></div>
+                    </div> 
+                    <img src="./static/img/valk/duiyuan2.png" alt="" class="valk-icon-top">
+                    <img src="./static/img/valk/duiyuan2info.png" alt="" class="valk-icon-bottom">
+                </div>
+                <div class="MD-fleet-info-form-btn">
+                    <a href="javascript:;" title="发布" id="_js_release" class="fleet-btn-release"></a>
+                    <a href="javascript:;" title="预览" id="_js_preview" class="fleet-btn-preview"></a>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!--队长列表-->
+    <div id="selvalkyrie_modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <span class="modal-close"></span>
+                <div class="modal-body team-make-box-selvalkyrie">
+                    <!--队长队员列表-->
+                    <img src="./upload/tg_index_02.png" alt="队长1" title="队长1" class="team_add_selvalkyrie_item" data-memberid="31" data-catid="7" data-valkname="队长1">
+                    <img src="./upload/tg_index_02.png" alt="白夜执事" title="白夜执事" class="team_add_selvalkyrie_item" data-memberid="31" data-catid="7" data-valkname="白夜执事">
+                    <img src="./upload/tg_index_02.png" alt="白夜执事" title="白夜执事" class="team_add_selvalkyrie_item" data-memberid="31" data-catid="7" data-valkname="白夜执事">
+                    <img src="./upload/tg_index_02.png" alt="白夜执事" title="白夜执事" class="team_add_selvalkyrie_item" data-memberid="31" data-catid="7" data-valkname="白夜执事">
+                    <img src="./upload/tg_index_02.png" alt="白夜执事" title="白夜执事" class="team_add_selvalkyrie_item" data-memberid="31" data-catid="7" data-valkname="白夜执事">
+                </div>
+                <div class="modal-body team-make-box-wuqi">
+                    <!--武器列表-->
+                </div>
+                <div class="modal-body team-make-box-sheng">
+                    <!--圣痕列表-->
+            </div>
+        </div>
+    </div>
+    <iframe src="./iframe.html1.html?t=1234567890" frameborder="0" style="display:none" id="_js_iframe"></iframe>
+    <script src="./static/js/jquery.min.js"></script>
+    <script src="./static/js/selectFilter.js"></script>
+    <script src="./static/js/index.min.js"></script>
+    <script>
+        $(function(){
+            commonJs.c();
+            var wuqiArr = {
+                "1":[{"id":"165","name":"永暮双狼1","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼1","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼1","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼1","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼1","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼1","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼1","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼1","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼1","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼1","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼1","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼1","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼1","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"}],
+                "2":[{"id":"165","name":"永暮双狼2","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼2","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"}],
+                "3":[{"id":"165","name":"永暮双狼3","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼3","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"},{"id":"165","name":"永暮双狼","url":"./upload/tg_index_02.png"}]
+            }
+            var shengArr = [{
+                "pid":0,"name":"上位","child":[{"id":"165","name":"上位省1","url":"./upload/tg_index_02.png"},{"id":"165","name":"上位省1","url":"./upload/tg_index_02.png"},{"id":"165","name":"上位省1","url":"./upload/tg_index_02.png"},{"id":"165","name":"上位省1","url":"./upload/tg_index_02.png"},{"id":"165","name":"上位省1","url":"./upload/tg_index_02.png"},{"id":"165","name":"上位省1","url":"./upload/tg_index_02.png"}]
+            },{
+                "pid":1,"name":"中位","child":[{"id":"165","name":"上位省2","url":"./upload/tg_index_02.png"}]
+            },{
+                "pid":2,"name":"下位","child":[{"id":"165","name":"上位省3","url":"./upload/tg_index_02.png"}]
+            }]
+            var floorApi = './api/getscene.php?layer=2';
+            var selme1 = '';
+            var selme2 = '';
+           
+            // 选择场景
+            $('.filter-box-1').selectFilter({
+				callBack : function (val){
+                    $('#_js_changjing_a_0').val(val);
+				}
+            });
+            // 选择楼层
+            function fetchFloor() {
+                $.ajax({
+                    url: floorApi,
+                    dataType: 'json',
+                    data: {
+                        type: $('#_js_changjing_a_0').val()
+                    },
+                    success: function (ret) {
+                        var retData = ret.data;
+                        $('.filter-box-2 select').html('')
+                        for (let i = 0; i < retData.length; i++) {
+                            $('.filter-box-2 select').append('<option value="'+retData[i].id+'" '+ (i === 0 ? 'selected' : '') +'>'+retData[i].name+'</option>')
+                        }
+                        $('.filter-box-2').selectFilter({
+                            callBack : function (val){
+                                $('#_js_changjing_a_1').val(val);
+                            }
+                        });
+                    },
+                    error:function(error){
+                        console.log(error)
+                    }
+                });
+            }
+            fetchFloor();
+           
+            // 游戏模式
+            $('.filter-box-3').selectFilter({
+				callBack : function (val){
+                    $('#_js_moshi_a_0').val(val);
+				}
+            });
+             // 角色评级 队长
+            $('.filter-box-4').selectFilter({
+				callBack : function (val){
+                    $('#_js_juese_a_1').val(val);
+				}
+            });
+            // 角色评级 队员
+            $('.filter-box-5').selectFilter({
+				callBack : function (val){
+                    $('#_js_juese_a_2').val(val);
+				}
+            });
+            // 角色评级 队员
+            $('.filter-box-6').selectFilter({
+				callBack : function (val){
+                    $('#_js_juese_a_3').val(val);
+				}
+            });
+            // modal 层
+            var  _getScrollbarWidth = function() { 
+                var t = document.createElement('div');
+                t.className = "modal-scrollbar-measure";
+                document.body.appendChild(t);
+                var e = t.getBoundingClientRect().width - t.clientWidth;
+                return document.body.removeChild(t), e;
+            }
+            // 点击选择队长
+            $('.input-div').on('click', function(){
+                var that = $(this);
+                var selme = $(this).data('selme'); 
+                selme1 = parseInt(selme.split(',')[0], 10);
+                selme2 = parseInt(selme.split(',')[1], 10);
+                $('.modal-body').hide();
+                if(selme2 === 1){
+                    // 选择队长队员公用
+                    $('.team-make-box-selvalkyrie').show();
+                }else if(selme2 == 2){
+                    if($('#selMember'+selme1).val() === ''){
+                        alert('请选择队长信息，在使用武器')
+                        return ;
+                    }
+                    $('.team-make-box-wuqi').show();
+                    var _wuqiHtml = '';
+                    for(var i in wuqiArr){
+                        if(wuqiArr.hasOwnProperty(i) && selme1 == i){
+                            for(let j=0;j<wuqiArr[i].length;j++){
+                                _wuqiHtml += '<div class="team_add_wuqi_item" data-wuqiid='+wuqiArr[i][j].id+' data-valkname='+wuqiArr[i][j].name+'>';
+                                _wuqiHtml += '<img src='+wuqiArr[i][j].url+' alt=""><p>'+wuqiArr[i][j].name+'</p>';
+                                _wuqiHtml += '</div>';
+                            }
+                            $('.team-make-box-wuqi').html(_wuqiHtml);
+                        }
+                    }
+                }else if(selme2 === 3 || selme2 === 4 || selme2 === 5){
+                    $('.team-make-box-sheng').show();
+                    var _shengHtml = '';   
+                    var _id = selme2 === 3 ? 0 : selme2 === 4 ? 1 : 2;
+                    for(let i=0;i<shengArr[_id].child.length;i++){
+                        _shengHtml += '<div class="team_add_sheng_item" data-shengid='+shengArr[_id].child[i].id+' data-valkname='+shengArr[_id].child[i].name+'>';
+                        _shengHtml += '<img src='+shengArr[_id].child[i].url+' alt=""><p>'+shengArr[_id].child[i].name+'</p>';
+                        _shengHtml += '</div>';
+                    }             
+                    $('.team-make-box-sheng').html(_shengHtml);
+                }
+                $('body').append('<div class="modal-backdrop fade"></div>')
+                $('.modal-backdrop').addClass('show');
+                $('body').addClass('modal-open').css({"padding-right":_getScrollbarWidth()+"px"})
+                $('#selvalkyrie_modal').css({"padding-right":_getScrollbarWidth()+"px", "display":"block"})
+                setTimeout(function(){
+                    $('#selvalkyrie_modal').addClass('show')
+                },200);
+            });
+            $('#selvalkyrie_modal').on('click', '.team_add_selvalkyrie_item', function(){
+                var that = $(this);
+                $('#selMember'+selme1).val(that.data('valkname'));
+                frameString["selMember"+selme1+"Img"] = that.prop('src');
+                //$('#selMember'+selme1+'Img').val(that.prop('src'));
+                $('#selMember'+selme1+'Id').val(that.data('memberid')+','+that.data('catid'));
+                modshaow(that)
+            });
+            $('#selvalkyrie_modal').on('click', '.team_add_wuqi_item', function(){
+                var that = $(this);
+                $('#shipName'+selme1).val(that.data('valkname')).attr({"data-id":that.data('wuqiid')})
+               // $('#shipName'+selme1+'Img').val(that.find('img').prop('src'));
+                frameString["shipName"+selme1+"Img"] = that.find('img').prop('src');
+                frameString["shipName"+selme1] = that.data('valkname');
+                $('#shipName'+selme1+'Id').val(that.data('wuqiid'));
+                modshaow(that)
+            });
+            $('#selvalkyrie_modal').on('click', '.team_add_sheng_item', function(){
+                var that = $(this);
+                $('#selsheng'+selme1+'_'+selme2).val(that.data('valkname')).attr({"data-shengid":that.data('shengid')});
+                //$('#selsheng'+selme1+'_'+selme2+'Img').val(that.find('img').prop('src'));
+                frameString["selsheng"+selme1+"_"+selme2+"Img"] = that.find('img').prop('src');
+                frameString["selsheng"+selme1+"_"+selme2] = that.data('valkname');
+                $('#selsheng'+selme1+'_'+selme2+'Id').val(that.data('shengid'));
+                modshaow(that)
+            });
+
+            $('.modal-close').on('click', function(){
+                var that = $(this);
+                that.parents('.modal').removeClass('show')
+                setTimeout(function(){
+                    that.parents('.modal').removeAttr("style").css({"display":"none"});
+                    $('.modal-backdrop').remove();
+                    $('body').removeAttr('style').removeClass('modal-open')
+                },200)
+            });
+            function modshaow(that){
+                that.parents('.modal').removeClass('show');
+                setTimeout(function(){
+                    that.parents('.modal').removeAttr("style").css({"display":"none"});
+                    $('.modal-backdrop').remove();
+                    $('body').removeAttr('style').removeClass('modal-open')
+                },200)
+            }
+            // 发布
+            $('#_js_release').on('click', function(){
+                var sel1M = $("#selMember1").data('id'),
+                    sel2M = $("#selMember2").data('id'),
+                    sel3M = $("#selMember3").data('id');
+                    
+                if(!parseInt(sel1M)){ alert("队长不能为空"); return false;}
+                if(!parseInt(sel2M)){ alert("队员1不能为空"); return false;}
+                if(!parseInt(sel3M)){ alert("队员2不能为空"); return false;}
+
+                $('#addForm').submit();
+            })
+            // 预览
+            $('#_js_preview').on('click', function(){
+                //var _data = frameString;
+                frameString['_js_juese_a_1'] = $('#_js_juese_a_1').val();
+                frameString['_js_juese_a_2'] = $('#_js_juese_a_2').val();
+                frameString['_js_juese_a_3'] = $('#_js_juese_a_3').val();
+                frameString['recommendTitle'] = $('#recommendTitle').val();
+                frameString['_js_moshi_a_0'] = $('#_js_moshi_a_0').val();
+                frameString['videoId'] = $('#videoId').val();
+                frameString['explainMsg'] = $('#explainMsg').val();
+                frameString['openAuthor'] = '撒打算';
+                frameString['openImg'] = './upload/tg_index_02.png';
+                console.log(frameString)
+                // return ;
+                var iframeElement = $("#_js_iframe");    
+                try{
+                    if(frameString['selMember1Img'] && frameString['selMember2Img'] && frameString['selMember3Img']){
+                        var sessionStorageiframeHtml = sessionStorage.setItem('sessionStorageiframeHtml', JSON.stringify(frameString));
+                    var iframeDoc = iframeElement.contents().find('html').html();
+                    var codeWin = window.open();
+                        codeWin.document.write(iframeDoc);
+                        codeWin.document.close();
+                        console.log(sessionStorageiframeHtml, iframeDoc, codeWin)
+                    }
+                }catch(err){
+                    console.log(err)
+                    alert('换chrome浏览器吧')
+                }
+            });
+            var frameString = {
+                selMember1Img :  '',
+                selMember2Img : '',
+                selMember3Img : '',
+                
+                shipName1Img : '',
+                shipName2Img : '',
+                shipName3Img : '',
+
+                _js_juese_a_1 : '',
+                _js_juese_a_2 : '',
+                _js_juese_a_3 : '',
+
+                selsheng3_3 : '',
+                selsheng3_4 : '',
+                selsheng3_5 : '',
+                selsheng2_3 : '',
+                selsheng2_4 : '',
+                selsheng2_5 : '',
+                selsheng1_3 : '',
+                selsheng1_4 : '',
+                selsheng1_5 : '',
+
+                selsheng3_3Img : '',
+                selsheng3_4Img : '',
+                selsheng3_5Img : '',
+                selsheng2_3Img : '',
+                selsheng2_4Img : '',
+                selsheng2_5Img : '',
+                selsheng1_3Img : '',
+                selsheng1_4Img : '',
+                selsheng1_5Img : '',   
+
+                recommendTitle : '',
+                _js_moshi_a_0 : '',
+                _js_changjing_a_0 : '',
+                videoId : '',
+                explainMsg : '',
+                openImg : '',//'后端提供登陆人头像',
+                openAuthor : ''//'后端提供登陆人姓名',
+            }
+            // function fleetCmDistrict (){
+            //     var pattern = new RegExp("[~'!@#$%^&*()-+_=:]");
+            //     // var headline = $.trim($('#headline').val());
+            //     // var districtS = $('#_js_district').data('district-msg').split(',')[1];
+            //     // var shipName = $.trim($('#shipName').val());
+            //     // var shipId = $.trim($('#shipId').val());
+            //     // var qqId = $.trim($('#qqId').val());
+            //     // var detMsg = $.trim($('#detMsg').val());
+            //     // var imgPic = $('#_js_img').attr('src');
+            //     var selMember1 = $('#selMember1').val(),
+            //        // selMember1Img = $('#selMember1Img').val(),
+            //         selMember2 = $('#selMember2').val(),
+            //         //selMember2Img = $('#selMember2Img').val(),
+            //         selMember3 = $('#selMember3').val(),
+            //         //selMember3Img = $('#selMember3Img').val(),
+            //         _js_juese_a_1 = $('#_js_juese_a_1').val(),
+            //         _js_juese_a_2 = $('#_js_juese_a_2').val(),
+            //         _js_juese_a_3 = $('#_js_juese_a_3').val(),
+
+            //         shipName3 = $('#shipName3').val(),
+            //         //shipName1Img = $('#shipName1Img').val(),
+            //        // shipName2Img = $('#shipName2Img').val(),
+            //        // shipName3Img = $('#shipName3Img').val(),
+            //         shipName2 = $('#shipName2').val(),
+            //         shipName1 = $('#shipName1').val(),
+                    
+            //         selsheng3_3 = $('#selsheng3_3').val(),
+            //         selsheng3_2 = $('#selsheng3_2').val(),
+            //         selsheng3_1 = $('#selsheng3_1').val(),
+            //         selsheng2_3 = $('#selsheng2_3').val(),
+            //         selsheng2_2 = $('#selsheng2_2').val(),
+            //         selsheng2_1 = $('#selsheng2_1').val(),
+            //         selsheng1_3 = $('#selsheng1_3').val(),
+            //         selsheng1_2 = $('#selsheng1_2').val(),
+            //         selsheng1_1 = $('#selsheng1_1').val(),
+
+
+            //         // selsheng3_3Img = $('#selsheng3_3Img').val(),
+            //         // selsheng3_2Img = $('#selsheng3_2Img').val(),
+            //         // selsheng3_1Img = $('#selsheng3_1Img').val(),
+            //         // selsheng2_3Img = $('#selsheng2_3Img').val(),
+            //         // selsheng2_2Img = $('#selsheng2_2Img').val(),
+            //         // selsheng2_1Img = $('#selsheng2_1Img').val(),
+            //         // selsheng1_3Img = $('#selsheng1_3Img').val(),
+            //         // selsheng1_2Img = $('#selsheng1_2Img').val(),
+            //         // selsheng1_1Img = $('#selsheng1_1Img').val(),
+
+            //         recommendTitle = $('#recommendTitle').val(),
+            //         _js_moshi_a_0 = $('#_js_moshi_a_0').val(),
+            //         _js_changjing_a_0 = $('#_js_changjing_a_0').val(),
+            //         videoId = $('#videoId').val(),
+            //         explainMsg = $('#explainMsg').val()
+            //         ;
+
+            //     if(selMember1 === ''){
+            //         alert('请选择队长');
+            //         return
+            //     }
+            //     if(selMember2 === ''){
+            //         alert('请选择队长1');
+            //         return
+            //     }
+            //     if(selMember3 === ''){
+            //         alert('请选择队长2');
+            //         return
+            //     }
+            //     //else{
+            //     //     alert('创建标题不能为空');
+            //     //     return
+            //     // }
+            //     // if(!!shipName){
+            //     //     if(pattern.test(shipName)){
+            //     //         alert('舰团名称非法输入');
+            //     //         return
+            //     //     }
+            //     // }else{
+            //     //     alert('舰团名称不能为空');
+            //     //     return                                
+            //     // }
+            //     // if(!!shipId){
+            //     //     if(pattern.test(shipId)){
+            //     //         alert('舰团ID非法输入');
+            //     //         return
+            //     //     }
+            //     //     if(!shipId.match(/[0-9]{4,}/g)){
+            //     //         alert('舰团ID非法输入');
+            //     //         return  
+            //     //     }
+            //     // }else{
+            //     //     alert('舰团ID不能为空');
+            //     //     return 
+            //     // }
+            //     // if(!!qqId){
+            //     //     if(pattern.test(qqId)){
+            //     //         alert('QQ群号非法输入');
+            //     //         return
+            //     //     }
+            //     //     if(!qqId.match(/[0-9]{4,}/g)){
+            //     //         alert('QQ群号非法输入');
+            //     //         return  
+            //     //     }
+            //     // }else{
+            //     //     alert('QQ群号不能为空');
+            //     //     return 
+            //     // }
+            //     // if(!!detMsg){
+            //     //     if(pattern.test(detMsg)){
+            //     //         alert('详情内容非法输入');
+            //     //         return
+            //     //     }
+            //     // }else{
+            //     //     alert('详情内容不能为空');
+            //     //     return 
+            //     // }
+            //     return {
+            //         selMember1 : selMember1,
+            //         selMember1Img : selMember1Img,
+            //         selMember2 : selMember2,
+            //         selMember2Img : selMember2Img,
+            //         selMember3 : selMember3,
+            //         selMember3Img : selMember3Img,
+
+            //         _js_juese_a_1 : _js_juese_a_1,
+            //         _js_juese_a_2 : _js_juese_a_2,
+            //         _js_juese_a_3 : _js_juese_a_3,
+
+            //         shipName3 : shipName3,
+            //         shipName2 : shipName2,
+            //         shipName1 : shipName1,
+            //         shipName1Img : shipName1Img,
+            //         shipName2Img : shipName2Img,
+            //         shipName3Img : shipName3Img,
+
+
+
+            //         selsheng3_3 : selsheng3_3,
+            //         selsheng3_2 : selsheng3_2,
+            //         selsheng3_1 : selsheng3_1,
+            //         selsheng2_3 : selsheng2_3,
+            //         selsheng2_2 : selsheng2_2,
+            //         selsheng2_1 : selsheng2_1,
+            //         selsheng1_3 : selsheng1_3,
+            //         selsheng1_2 : selsheng1_2,
+            //         selsheng1_1 : selsheng1_1,
+
+            //         selsheng3_3Id : selsheng3_3,
+            //         selsheng3_2 : selsheng3_2,
+            //         selsheng3_1 : selsheng3_1,
+            //         selsheng2_3 : selsheng2_3,
+            //         selsheng2_2 : selsheng2_2,
+            //         selsheng2_1 : selsheng2_1,
+            //         selsheng1_3 : selsheng1_3,
+            //         selsheng1_2 : selsheng1_2,
+            //         selsheng1_1 : selsheng1_1,
+
+            //         recommendTitle : recommendTitle,
+            //         _js_moshi_a_0 : _js_moshi_a_0,
+            //         _js_changjing_a_0 : _js_changjing_a_0,
+            //         videoId : videoId,
+            //         explainMsg : explainMsg,
+
+            //         openImg : './upload/tg_index_02.png',//'后端提供登陆人头像',
+            //         openAuthor : '呃呃呃'//'后端提供登陆人姓名',
+            //     }
+            // }
+        })
+    </script>
+</body>
+</html>

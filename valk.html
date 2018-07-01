@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        崩塌3
+    </title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta charset="utf-8">
+    <!--项目meta信息，请编辑提供 start-->
+    <meta name="applicable-device" content="PC">
+    <!--项目meta信息，请编辑提供 end-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="./static/css/jquery.mCustomScrollbar.css">
+    <link type="text/css" rel="stylesheet" href="./static/css/index.css?t=1234567890" media="all">
+</head>
+<body>
+    <div class="container">
+        <div class="home-partKv">
+            <img src="./upload/banner_home.jpg" alt="">
+        </div>
+        <div class="header">
+            <div class="w1024 MD-header-box">
+                    <a href="./team-recommen.html" class="nav-0"  target="_blank">
+                            <span class="hed-tit">通关队伍推荐</span>
+                            <span class="hed-i"></span>
+                        </a>
+                        <a href="./valk.html" class="nav-1"  target="_blank">
+                            <span class="hed-tit">女武神资料</span>
+                            <span class="hed-i"></span>
+                        </a>
+                        <a href="arms-list.html" class="nav-2" target="_blank">
+                            <span class="hed-tit">武器大全</span>
+                            <span class="hed-i"></span>
+                        </a>
+                        <a href="./arms-list.html" class="nav-3"  target="_blank">
+                            <span class="hed-tit">圣痕资料</span>
+                            <span class="hed-i"></span>
+                        </a>
+                        <a href="./article-list.html" class="nav-4" target="_blank">
+                            <span class="hed-tit">资讯攻略</span>
+                            <span class="hed-i"></span>
+                        </a>
+                        <a href="./fleet-list.html" class="nav-5"  target="_blank">
+                            <span class="hed-tit">舰队招募</span>
+                            <span class="hed-i"></span>
+                        </a>  
+                <div class="login-in-out">
+                    <a href="javascript:;" title="登录" class="login-in" id="_js_login_in">登录</a>
+                    <a href="javascript:;" title="注册" class="login-reg" id="_js_login_reg">注册</a>
+                    <!-- <a href="javascript:;" title="注册" id="_js_login_out">退出</a> -->
+                </div>              
+            </div>
+        </div>
+        <div class="valk-box">
+            <div class="w1024">
+                <div class="loading"><span>正在加载。。。</span></div>
+                <div class="valk-box-a">
+                </div>
+                <div class="m-pagination">   
+                </div>
+            </div>
+        </div>
+    </div>
+	<script type="text/html" id="tpl">
+        {{#for(var i in d){}}
+		<img src="{{d[i].title_pic}}" alt="" height="63" width="1023" class="img-block">
+		<div class="valk-list-scroll">
+		{{#for(var j in d[i].list){}}
+			<a href="{{d[i].list[j].valkyrie_url}}" target="_blank">
+				<img src="{{d[i].list[j].valkyrie_pic}}" alt="" width="162" height="205">
+				</a>
+				{{#}}}
+		</div>
+        {{#}}}
+    </script>
+    <script src="./static/js/jquery.min.js"></script>
+    <script src="./static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./static/js/laytpl.min.js"></script>
+    <script src="./static/js/index.min.js"></script>
+    <script>
+        $(function(){
+            commonJs.valk_init('.valk-list-scroll', 1, './api/valkindex.php', {}, 1, 1, '.valk-box-a')
+
+        })
+    </script>
+</body></html>
