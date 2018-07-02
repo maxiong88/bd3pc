@@ -244,6 +244,7 @@ a,div,button {
     top: -38px;
     font-size: 18px;
     border-radius: 10px 10px 0 0;
+    display:none;
 }
 .MD-header-box .login-in-out a{
     font-size: 18px;
@@ -563,13 +564,15 @@ a,div,button {
     height: 34px;
     position: absolute;
     right: 0;
-    bottom: 40px;
+    bottom: -40px;
     background: url(../img/home-team-href.png) no-repeat
 }
-
+.home-part3 .home-team-href{
+    bottom: -60px
+}
 .home-part3{
     width: 100%;
-    /* height: 1104px; */
+    min-height: 1104px;
     padding-top: 40px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1029,7 +1032,7 @@ a,div,button {
 
 .home-part5{
     width: 100%;
-    height: 840px;
+    height: 890px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background: url(../img/home/vein_5th.png) no-repeat center bottom;    
@@ -1106,6 +1109,14 @@ a,div,button {
     line-height: 13px;
     font-size: 13px;
     margin-top: 15px;
+    height: 16px;
+    line-height: 16px;
+}
+.article-list-home li span.author{
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .article-list-home li span.author,
 .article-list-home li span.time
@@ -1113,18 +1124,21 @@ a,div,button {
     color:#b3b3b3;
     font-size: 13px;
     margin-right: 25px;
+    float: left;
 }
 .article-list-home li span.time{
     margin-right: 50px;
 }
 .article-list-home li span.top{
     color: #f39801;
-    display: inline-block;
     line-height: 10px;
     font-size: 10px;
     padding: 2px;
     border: 1px solid #f39801;
     border-radius: 5px;
+    position: absolute;
+    right: 170px;
+    bottom: 0;
 }
 .article-list-home li img{
     position: absolute;
@@ -1502,6 +1516,7 @@ a,div,button {
     top: 0;
 }
 .MD-fleet-list-sel a.item-add{
+    display: none;
     position: absolute;
     right: 0;
     bottom: 40px;
@@ -2211,12 +2226,11 @@ a,div,button {
     width: 80px;
     float: left;
 }
-.valk-zbdp-list li > p{
+.valk-zbdp-list li p{
     width: 80px;
     overflow: hidden;
     white-space: nowrap;
-    text-align: justify;
-    text-justify: inter-ideograph;
+    text-overflow: ellipsis;
     font-size: 14px;
 }
 .valk-zbdp-list li .item1{
