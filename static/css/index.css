@@ -3080,10 +3080,16 @@ a,div,button {
     top:0;
 }
 .art-nav-fixed > a{
-    width: 102px;
+    width: 100px;
     height: 32px;
     margin-bottom: 10px;
     float: left;
+	color:#fff;
+	border:1px solid #fff;
+	text-align:center;
+	font-size:12px;
+	line-height:32px;
+	border-radius:5px;
 }
 .art-nav-fixed img{
     display: block;
