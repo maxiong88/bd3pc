@@ -57,14 +57,19 @@
         </div>
         <div class="article-box article-list-home">
             <div class="w1024">
-                <!-- <div class="art-nav-fixed">
-                    <a href="#article-list-p1"><img src="./static/img/art/art-nav-1.png" alt=""></a>
-                    <a href="#article-list-p2"><img src="./static/img/art/art-nav-1.png" alt=""></a>
-                    <a href="#article-list-p3"><img src="./static/img/art/art-nav-1.png" alt=""></a>
-                </div> -->
+                <div class="art-nav-fixed">
+                    <a href="article-list.1.html" target="_blank">咨询11</a>
+                    <a href="article-list.1.html" target="_blank">咨询11</a>
+                    <a href="article-list.1.html" target="_blank">咨询11</a>
+                </div>
                 <div class="overflow-class article-list-p100" id="article-list-p100">
                     <div class="team-recommen-box-con">
                         <div class="loading"><span>正在加载。。。</span></div>
+                        <div class="banner">
+                            <a href="javascript:;" target="_blank">
+                                <img src="./upload/banner_home.jpg" alt="" width="1024" height="200">
+                            </a>
+                        </div>
                         <ul id="itemContainer">
                         </ul>
                         <div class="m-pagination">   
@@ -82,7 +87,9 @@
         <li>
             <a href="{{d[i].info_url}}" target="_blank">
                 <p class="msg">{{d[i].info_msg}}</p>
-                <span>{{d[i].info_time}}</span>
+                <p class="author">{{d[i].info_author}}</p>
+                <p class="time">{{d[i].info_time}}</p>
+                <img src="./upload/home-3.jpg" alt="" width="248" height="160">
             </a>
         </li>
         {{#}}}
