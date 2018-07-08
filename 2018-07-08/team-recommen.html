@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        崩塌3-队伍推荐
+    </title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta charset="utf-8">
+    <!--项目meta信息，请编辑提供 start-->
+    <meta name="applicable-device" content="PC">
+    <!--项目meta信息，请编辑提供 end-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="./static/css/jquery.mCustomScrollbar.css">
+    <link type="text/css" rel="stylesheet" href="./static/css/index.css?t=1234567890" media="all">
+</head>
+<body>
+    <div class="container">
+        <div class="home-partKv">
+            <img src="./upload/banner_home.jpg" alt="">
+        </div>
+        <div class="header">
+            <div class="w1024 MD-header-box">
+                <a href="./article-list.html" class="nav-0"   >
+                    <span class="hed-tit">资讯攻略</span>
+                    <span class="hed-i"></span>
+                </a>
+                <a href="./valk.html" class="nav-1"   >
+                    <span class="hed-tit">女武神资料</span>
+                    <span class="hed-i"></span>
+                </a>
+                <a href="arms-list.html" class="nav-2"  >
+                    <span class="hed-tit">武器大全</span>
+                    <span class="hed-i"></span>
+                </a>
+                <a href="./arms-list.html" class="nav-3"   >
+                    <span class="hed-tit">圣痕资料</span>
+                    <span class="hed-i"></span>
+                </a>
+                <a href="./team-recommen.html" class="nav-4  on"  >
+                    <span class="hed-tit">通关队伍推荐</span>
+                    <span class="hed-i"></span>
+                </a>
+                <a href="./fleet-list.html" class="nav-5"   >
+                    <span class="hed-tit">舰队招募</span>
+                    <span class="hed-i"></span>
+                </a>  
+                <div class="login-in-out">
+                    <a href="javascript:;" title="登录" class="login-in" id="_js_login_in">登录</a>
+                    <a href="javascript:;" title="注册" class="login-reg" id="_js_login_reg">注册</a>
+                </div>              
+            </div>
+        </div>
+        <div class="team-recommen-box">
+            <div class="w1024">
+                <div class="team-recommen-check">
+                    <a href="./team-add.html" title="我要发布" class="pub"></a>
+                    <div class="team-recommen-tab">
+                        <dl class="item-0 item-1 on">
+                            <dt data-t="0333"></dt>
+                            <dd>
+                                <dl class="item-00">
+                                    <dd data-p="1">皮皮妈</dd>
+                                    <dd data-p="2">皮皮妈皮皮妈</dd>
+                                    <dd data-p="3">皮皮妈皮皮妈皮皮妈</dd>
+                                    <dd data-p="4">皮皮妈</dd>
+                                    <dd data-p="5">皮皮妈</dd>
+                                    <dd data-p="6">皮皮妈皮皮妈皮皮妈</dd>
+                                    <dd data-p="7">皮皮妈</dd>
+                                    <dd data-p="8">皮皮妈皮皮妈皮皮妈</dd>
+                                    <dd data-p="9">皮皮妈</dd>
+                                </dl>
+                            </dd>
+    
+                        </dl>
+                        <dl class="item-0 item-2">
+                            <dt data-t="1222"></dt>
+                            <dd>
+                                <dl class="item-00">
+                                    <dd data-p="11">是皮皮妈</dd>
+                                    <dd data-p="12">皮皮妈皮皮妈</dd>
+                                    <dd data-p="13">皮皮妈皮皮妈皮皮妈</dd>
+                                    <dd data-p="0">皮皮妈</dd>
+                                    <dd data-p="0">皮皮妈</dd>
+                                    <dd data-p="0">皮皮妈皮皮妈皮皮妈</dd>
+                                    <dd data-p="0">皮皮妈</dd>
+                                    <dd data-p="0">皮皮妈皮皮妈皮皮妈</dd>
+                                    <dd data-p="0">皮皮妈</dd>
+                                </dl>
+                            </dd>
+        
+                        </dl>
+                        <dl class="item-0 item-3">
+                            <dt data-t="2"></dt>
+                            <dd>
+                                <dl class="item-00">
+                                    <dd data-p="0">是皮皮妈1</dd>
+                                    <dd data-p="0">皮皮妈皮皮妈</dd>
+                                    <dd data-p="0">皮皮妈皮皮妈皮皮妈</dd>
+                                    <dd data-p="0">皮皮妈</dd>
+                                    <dd data-p="0">皮皮妈</dd>
+                                    <dd data-p="0">皮皮妈皮皮妈皮皮妈</dd>
+                                    <dd data-p="0">皮皮妈</dd>
+                                    <dd data-p="0">皮皮妈皮皮妈皮皮妈</dd>
+                                    <dd data-p="0">皮皮妈</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="team-recommen-box-con">
+                    <div class="loading"><span>正在加载。。。</span></div>
+                    <ul id="itemContainer">
+                    </ul>
+                    <div class="m-pagination">   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script id="tpl" type="text/template">
+        {{#for(var i in d){}}
+        <li>
+            <a href="{{d[i].info_url}}">
+                <div class="team_recommen_item">
+                    <div class="team_recommen_item_title box">
+                        <div>
+                            {{#  if(d[i].info_video_bool){ }}
+                                <div class="team_recommen_item_icon ver-mid">
+                                    <img src="/static/ap/img/video_link_exi@2x.png" alt="">
+                                </div>
+                            {{#  } }}
+                            <div class="ver-mid">{{d[i].info_title}}</div>
+                        </div>
+                    </div>
+                    <div class="team_recommen_item_picinfo">
+                        <div class="item_picinfo_scene">
+                            <span>
+                                <img src="{{d[i].info_scene}}" alt="">
+                            </span>
+                        </div>
+                        <div class="item_picinfo_team">
+                            <div class="item_picinfo_team_item">
+                                <img src="{{d[i].info_team01}}" alt="">
+                                <div class="item_picinfo_team_01_bg"></div>
+                                <div class="item_picinfo_team_name">{{d[i].info_team01_name}}</div>
+                            </div>
+                            <div class="item_picinfo_team_item">
+                                <img src="{{d[i].info_team02}}" alt="">
+                                <div class="item_picinfo_team_name">{{d[i].info_team02_name}}</div>
+                            </div>
+                            <div class="item_picinfo_team_item">
+                                <img src="{{d[i].info_team03}}" alt="">
+                                <div class="item_picinfo_team_name">{{d[i].info_team03_name}}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item_picinfo_scene_name"><span>使用场景</span>{{d[i].info_scene_name}}</div>
+                    <div class="team_recommen_item_textinfo">
+                        {{d[i].info_intro}}
+                    </div>
+                    <div class="team_recommen_item_otherinfo">
+                        <div class="item_otherinfo_bot01 fl">作者：{{d[i].info_auth}}</div>
+                        <div class="fr">
+                            <div class="item_otherinfo_bot02">
+                                <i class="item-1"></i>{{d[i].info_good}}
+                                <i class="item-2"></i>{{d[i].info_bad}}
+                                <i class="item-3"></i>{{d[i].info_comend}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{#}}}
+    </script>
+    <script src="./static/js/jquery.min.js"></script>
+    <script src="./static/js/laytpl.min.js"></script>
+    <script src="./static/js/index.min.js"></script>
+    <script>
+        $(function(){
+
+            commonJs.team_recommen('./api/teamrecommen.php', 1, 1, '#itemContainer', 1);
+
+         })
+
+    </script>
+</body>
+</html>
