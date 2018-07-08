@@ -396,6 +396,7 @@ a,div,button {
 }
 .team-recommen-box-con{
     overflow: hidden;
+	min-height:500px;
 }
 .team-recommen-box-con ul{
     margin-right: -40px;
@@ -605,19 +606,21 @@ a,div,button {
 }
 .home-part3 .item-0{
     font-size: 0;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     margin-top: 18px;
+	overflow: hidden;
+    margin-right: -20px
 }
 .home-part3 .item-0:first-child{
     margin-top: 0;
 }
 .home-part3 .item-0 a{
-    display: inline-block;
-    width: 136px;
+    float: left;
+    width: 130px;
     height: 154px;
     border: 1px solid #f39800;
-    margin-left: 12px;
-    
+    margin-right: 12px;
+    margin-bottom: 10px;
     position: relative;
 }
 .home-part3 .item-0 a:first-child{
@@ -641,11 +644,12 @@ a,div,button {
 }
 .home-part3 .content-scroll {
     width: 1024px;
+	overflow:hidden;
     /* height: 336px; */
-    margin: 40px 0 30px 0;
+    /*margin: 40px 0 30px 0;*/
 }
 .home-part3 .content-scroll .item-0:nth-child(2n+1){
-    margin-left: 60px;
+   /* margin-left: 60px;*/
 }
 .stig-box,
 .valk-box{
@@ -658,7 +662,9 @@ a,div,button {
 }
 .stig-box .stig-box-scroll{
     position: relative;
-    padding-left: 170px
+    padding-left: 170px;
+	min-height:200px;
+	margin:40px 0 30px;
 }
 .stig-box .stig-xing0{
     width: 89px;
@@ -922,14 +928,15 @@ a,div,button {
 }
 .MD-mark-details .mark-item-15{
     font-size: 0;
-    width: 771px;
-    height: 451px;
+    width: 928px;
     margin: 0 auto 40px;
+	text-align:center;
     
 }
 .MD-mark-details .mark-item-15 img{
     display: inline-block;
     margin-left: 10px;
+	width:301px;
 }
 .MD-mark-details .mark-item-15 img:first-child{
     margin-left: 0;
@@ -1002,16 +1009,14 @@ a,div,button {
     top: 18px;
     line-height: 16px;
 }
-.part4-wuqi-box .wuqi-tit i{
-    display: inline-block;
-    vertical-align: -5px;
-    margin-right: 16px;
-    width: 34px;
-    height: 23px;
-    background: url(../img/wuqi-icon-0.jpg) no-repeat;
+.part4-wuqi-box .wuqi-tit img{
+	display: inline-block;
+	vertical-align: -5px;
+	margin-right: 6px;
+	width: 34px;
 }
 .part4-wuqi-box .wuqi-tit em{
-    font-style: italic;
+    font-style: normal;
 }
 .part4-wuqi-box .wuqi-gj{
     position: absolute;
@@ -1019,7 +1024,7 @@ a,div,button {
     top: 73px;
     font-size: 22px;
     line-height: 22px;
-    font-style: italic;
+    font-style: normal;
 }
 .part4-wuqi-box .wuqi-hx{
     position: absolute;
@@ -1027,7 +1032,7 @@ a,div,button {
     top: 116px;
     font-size: 22px;
     line-height: 22px;
-    font-style: italic;
+    font-style: normal;
 }
 
 .home-part5{
@@ -1078,6 +1083,7 @@ a,div,button {
 .article-list-home ul{
     border: 1px solid #3d3e40;
     padding: 10px 10px 0 10px;
+	height:521px;
 }
 .article-list-home ul li{
     padding: 15px 0 10px 0;
@@ -3116,6 +3122,10 @@ a,div,button {
 	line-height:32px;
 	border-radius:5px;
 }
+.art-nav-fixed > a.on{
+	color:#ff9d00;
+	border:1px solid #ff9d00;
+}
 .art-nav-fixed img{
     display: block;
     width: 100%;
@@ -3678,3 +3688,15 @@ a,div,button {
 .valk-box-a{
     overflow:hidden;
     }
+.ver-mid{
+	display:inline-block;
+}
+.team_recommen_item_title > div{
+	
+	height:34px;
+	line-height:34px;
+}
+.team_recommen_item_title .ver-mid + .ver-mid{
+    vertical-align: 10px;
+    margin-left: 21px;
+}
