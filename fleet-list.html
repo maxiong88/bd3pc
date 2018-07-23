@@ -82,13 +82,15 @@
                     <a href="./fleet.html" class="item-add" title="我要发布招募"  ></a>
                 </div>
                 <div  class="MD-fleet-list-con">
-                    <!-- <ul>
-                        <li>
+                    <ul>
+                        <!-- <li>
                             <a href="./fleet-details.html"  >
-                                <p class="tit">最强菜鸟，欢迎菜鸟呼吁</p>
                                 <img src="./upload/iframe-6.jpg" alt="">
-                                <p class="msg">设置为 false 以阻止 vue 在启动时生成生产提示。设置为 false 以阻止 vue 在启动时生成生产提示。设置为 false 以阻止 vue 在启动时生成生产提示。</p>
-                                <p class="username">发布者：就死不告诉你</p>
+                                <div class="item_1">
+                                    <p class="tit">最强菜鸟，欢迎菜鸟呼吁最强菜鸟，欢迎菜鸟呼吁最强菜鸟，欢迎菜鸟呼吁最强菜鸟，欢迎菜鸟呼吁最强菜鸟，欢迎菜鸟呼吁最强菜鸟，欢迎菜鸟呼吁</p>
+                                    <p class="msg">设置为 false 以阻止 vue 在启动时生成生产提示。设置为 false 以阻止 vue 在启动时生成生产提示。设置为 false 以阻止 vue 在启动时生成生产提示。</p>
+                                    <p class="username">发布者：就死不告诉你</p>
+                                </div>
                             </a>
                         </li>
                         <li>
@@ -114,8 +116,8 @@
                                 <p class="msg">设置为 false 以阻止 vue 在启动时生成生产提示。设置为 false 以阻止 vue 在启动时生成生产提示。设置为 false 以阻止 vue 在启动时生成生产提示。</p>
                                 <p class="username">发布者：就死不告诉你</p>
                             </a>
-                        </li>
-                    </ul> -->
+                        </li> -->
+                    </ul>
                     <div class="loading"><span>正在加载。。。</span></div>
                     <ul id="itemContainer">
                     </ul>
@@ -129,10 +131,12 @@
         {{#for(var i in d){}}
             <li>
                 <a href="./fleet-details.html?{{d[i].id}}"   >
-                    <p class="tit">{{d[i].fleet_title}}</p>
                     <img src="{{d[i].fleet_cover}}" alt="">
-                    <p class="msg">{{d[i].fleet_intro}}</p>
-                    <p class="username">发布者：{{d[i].fleet_auth}}</p>
+                    <div class="item_1">
+                        <p class="tit">{{d[i].fleet_title}}</p>
+                        <p class="msg">{{d[i].fleet_intro}}</p>
+                        <p class="username">发布者：{{d[i].fleet_auth}}</p>
+                    </div>
                 </a>
             </li>
         {{#}}}
