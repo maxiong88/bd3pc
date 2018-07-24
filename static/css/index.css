@@ -919,7 +919,7 @@ a,div,button {
     text-align: justify;
     text-justify: inter-ideograph;
     width: 612px;
-    margin: 0 auto 40px;
+    margin: 0 auto 50px;
 }
 .MD-mark-details .mark-item-18{
     text-align: center;
@@ -928,15 +928,18 @@ a,div,button {
 }
 .MD-mark-details .mark-item-15{
     font-size: 0;
-    width: 928px;
-    margin: 0 auto 40px;
+    width: 700px;
+	height:280px;
+    margin: 0 auto 35px;
 	text-align:center;
     
 }
 .MD-mark-details .mark-item-15 img{
     display: inline-block;
-    margin-left: 10px;
-	width:301px;
+	width:700px;
+	height:280px;
+	-webkit-object-fit:cover;
+	object-fit:cover;
 }
 .MD-mark-details .mark-item-15 img:first-child{
     margin-left: 0;
@@ -2176,22 +2179,22 @@ a,div,button {
 }
 .valk-details-tab-box .item-2a .item-2-1{
     background: #f6f6f6;
-    height: 40px;
-    padding-left: 73px;
-    margin-top: 30px;
+    height: 100px;
+    padding: 10px 30px;
+    margin-top: 20px;
 }
 .valk-details-tab-box .item-2a span{
-    margin-left: 17px;
+    margin-left: 10px;
+	vertical-align: 18px;
 }
 .valk-details-tab-box .item-2a .item-2-2,
 .valk-details-tab-box .item-2a .item-2-3
 {
-    width: 610px;
     text-align: justify;
     text-justify: inter-ideograph;
     line-height: 20px;
     font-size: 14px;
-    margin: 10px auto 0;
+    margin: 10px 30px;
 }
 .valk-details-tab-box .item-2a .item-2-2{
     margin-top: 10px;
@@ -2203,9 +2206,11 @@ a,div,button {
 }
 .valk-details-tab-box .item-2 p img{
     vertical-align: -15px;
-    width: 40px;
+    width: 65px;
     margin-right: 10px;
-    height: 40px;
+    height: 80px;
+	-webkit-object-fit:cover;
+	object-fit:cover;
 }
 .valk-details-tab-box .item-2 p{
     font-size: 16px;
@@ -2234,46 +2239,72 @@ a,div,button {
     height: 23px;
     margin: 0 auto 40px;
 }
+.valk-box .jinjian{
+    background: url(../img/valk/jinjian.png) no-repeat;
+    width: 765px;
+    height: 23px;
+    margin: 0 auto 40px;
+}
 .valk-box .bg-2{
-    width: 614px;
+    width: 675px;
     height: 29px;
     background: url(../img/valk/bg-2.png) no-repeat;
-    margin: 0 auto 20px;
+    margin: 0 0 20px 30px;
 }
 .valk-zbdp-list {
+	width: 765px;
     overflow: hidden;
 }
 .valk-zbdp-list li{
     width: 765px;
-    height: 115px;
+    height: 224px;
     position: relative;
     background: url(../img/valk/bg-1.png) no-repeat;
     margin-bottom: 10px;
-    padding:13px 70px 0 75px; 
+    padding-top:30px; 
     display: block;
 }
 .valk-zbdp-list li:last-child{
     margin-bottom: 0;
 }
 .valk-zbdp-list li > div{
-    width: 80px;
     float: left;
 }
 .valk-zbdp-list li p{
-    width: 80px;
+    width: 100%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     font-size: 14px;
+	text-align:center;
+}
+.valk-zbdp-list li .item0 img{
+	width:195px;
+	height:132px;
+	-webkit-object-fit:cover;
+	object-fit:cover;	
+}
+.valk-zbdp-list li .item0{
+    margin-left: 30px;
+	width:195px;
 }
 .valk-zbdp-list li .item1{
-    margin-left: 145px;
+    margin-left: 100px;
+	width:108px;
 }
 .valk-zbdp-list li .item2{
-    margin-left: 78px;
+    margin-left: 42px;
+	width:108px;
 }
 .valk-zbdp-list li .item3{
-    margin-left: 77px;
+    margin-left: 42px;
+	width:108px;
+}
+.valk-zbdp-list li .item1 img,.valk-zbdp-list li .item2 img,.valk-zbdp-list li .item3 img{
+	width:108px;
+	height:132px;
+	-webkit-object-fit:cover;
+	object-fit:cover;
 }
 /*武器*/
 .arms-box .arms-detals-tab{
@@ -2305,16 +2336,18 @@ a,div,button {
 }
 .arms-details-tab-box .tab-box-hed{
     width: 100%;
-    height: 240px;
+    height: 212px;
     background: url(../img/arms/wuqi-bg-q.png) no-repeat;
     position: relative;
     overflow: hidden;
 }
 .arms-details-tab-box .tab-box-hed img{
-    width: 200px;
-    height: 200px;
+    width: 315px;
+    height: 212px;
     display: block;
-    margin: 17px auto 0;
+	-webkit-object-fit:cover;
+	object-fit:cover;
+    margin: 0 auto;
 }
 .arms-details-tab-box .item-1{
     width: 313px;
@@ -2322,7 +2355,7 @@ a,div,button {
     line-height: 64px;
     text-align: center;
     background: url(../img/arms/wuqi-bg-a.png) no-repeat;
-    margin: 28px auto;
+    margin: 40px auto 35px;
 }
 .arms-details-tab-box .item-2{
     width: 610px;
@@ -2364,6 +2397,12 @@ a,div,button {
 }
 .arms-details-tab-box .tab-box{
     display: none;
+}
+.valk-details-tab-box .tab-box > img.img-block{
+	width:100%;
+	height:238px;
+	-webkit-object-fit:cover;
+	object-fit:cover;
 }
 .arms-details-tab-box .wuqipingce{
     padding-left: 533px;
