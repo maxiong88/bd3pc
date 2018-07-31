@@ -380,6 +380,17 @@ a,div,button {
     height: 27px;
     background: url(../img/home/tongguantujian.png) no-repeat;
     margin-left: -1px;
+    position: relative;
+}
+.home-part2 .part2-icon a{
+    font-size: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 27px;
+    cursor: pointer;
+    z-index: 2;
 }
 .home-part2 .part2-tab{
     padding: 50px 0 40px;
@@ -585,6 +596,17 @@ a,div,button {
     height: 27px;
     background: url(../img/home/shenghentujian.png) no-repeat;
     margin-left: -1px;
+    position: relative;
+}
+.home-part3 .part3-icon a{
+    font-size: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 27px;
+    cursor: pointer;
+    z-index: 2;
 }
 .home-part3  .hed-icon-0{
     width: 1024px;
@@ -876,7 +898,9 @@ a,div,button {
 .MD-mark-details .stig-table-2 .item0 em{
     float: left;
     padding-right: 17px;
-    margin-top: 9px; 
+    margin-top: 9px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .MD-mark-details .stig-table-2 .item1 em{
     background: #f39800;
@@ -971,6 +995,17 @@ a,div,button {
     background: url(../img/home/wuqitujian.png) no-repeat;
     margin-left: -1px;
     margin-bottom: 70px;
+    position: relative;
+}
+.home-part4 .part4-icon a{
+    font-size: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 27px;
+    cursor: pointer;
+    z-index: 2;
 }
 .part4-wuqi-box{
     width: 100%;
@@ -1052,6 +1087,17 @@ a,div,button {
     background: url(../img/home/zhanjiantujian.png) no-repeat;
     margin-left: -1px;
     margin-bottom: 60px;
+    position: relative;
+}
+.home-part5 .part5-icon a{
+    font-size: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 27px;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .home-part1{
@@ -2398,11 +2444,13 @@ a,div,button {
 .arms-details-tab-box .tab-box{
     display: none;
 }
-.valk-details-tab-box .tab-box > img.img-block{
+.tab-box-0731{
+    width:100%;
+    height:238px;
+    overflow: hidden;   
+}
+.valk-details-tab-box .tab-box-0731 img.img-block{
 	width:100%;
-	height:238px;
-	-webkit-object-fit:cover;
-	object-fit:cover;
 }
 .arms-details-tab-box .wuqipingce{
     padding-left: 533px;
@@ -3111,7 +3159,7 @@ a,div,button {
     border: 0;
     margin-right: 0;
     padding: 0;
-    
+    height: auto;
 }
 .article-list-home .article-list-p100 ul li{
     width: 100%;
