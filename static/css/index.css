@@ -2456,6 +2456,7 @@ a,div,button {
     padding-left: 533px;
     position: relative;
     padding-top: 30px;
+	min-height:250px;
 }
 .arms-details-tab-box .wuqipingce img{
     position: absolute;
