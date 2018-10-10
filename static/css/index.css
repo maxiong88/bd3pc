@@ -4203,3 +4203,15 @@ a,button,div,input,textarea {
 	margin-left: 21px;
 	vertical-align: 10px
 }
+.not_404{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	overflow: hidden;
+}
+.not_404 img{
+	width: 511px;
+	height: 314px;
+	display: block;
+	margin: 100px auto;
+}
