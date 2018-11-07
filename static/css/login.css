@@ -34,7 +34,12 @@ body,p,div {
     word-break: break-all;
     word-wrap: break-word
 }
-
+.ml92{
+    margin-left: 92px;
+}
+.mt49{
+    margin-top: 49px !important;
+}
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
@@ -149,12 +154,17 @@ input {
 
 
 .wrapper {
-    width: 980px;
+    width: 929px;
     margin: 70px auto;
     height: 787px;
     padding-top: 120px;
     position: relative;
     background: url(../img/login/vein.png) no-repeat;
+}
+.wrapper .pimg{
+    position: absolute;
+    left: -10%;
+    top: 120px;
 }
 .pimg img{
     display: block;
@@ -201,7 +211,7 @@ input {
    color:    #d3d3d3;
 }
 .from-item input{
-    width: 279px;
+    width: 291px;
     border: 1px solid #d8d8d8;
     border-radius: 4px;
     font-size: 20px;
@@ -236,6 +246,8 @@ input {
     border-radius: 5px;
     margin-bottom: 24px;
     text-align: center;
+    font-size: 18px;
+    font-weight: bold;
 }
 .threelogin{
     font-size: 18px;
@@ -277,8 +289,12 @@ input {
     width: 481px;
     height: 487px;
     background: url(../img/login/forget_frame.png) no-repeat;
-    float: right;
-    padding: 100px 44px 0 42px;
+    /* float: right; */
+    margin-left: 405px;
+    padding: 100px 50px 0 45px;
+}
+.forget-body .from-email input{
+    width:269px;
 }
 .con-body ul{
     margin-bottom: 65px;
@@ -292,6 +308,14 @@ input {
 }
 .con-body ul li:first-child{
     margin-top: 0;
+}
+.con-body .from-email i{ 
+    display: inline-block;
+    width: 19px;
+    height: 21px;
+    background: url(../img/login/account_icon.png) no-repeat;
+    vertical-align: -3px;
+    margin-right: 5px;  
 }
 .con-body .from-mobile i{
     display: inline-block;
@@ -327,7 +351,7 @@ input {
     width: 135px;
 }
 .con-body .from-smscode a{
-    width: 120px;
+    width: 111px;
     height: 44px;
     line-height: 44px;
     text-align: center;
@@ -363,20 +387,22 @@ input {
     width: 481px;
     height: 487px;
     background: url(../img/login/register_frame12.png) no-repeat;
-    float: right;
+    /* float: right; */
     display: none;
-    padding: 100px 44px 0 42px;
+    margin-left: 405px;
+    padding: 100px 50px 0 45px;
 }
 .register-body-2{
     width: 481px;
     height: 487px;
     background: url(../img/login/register_frame22.png) no-repeat;
-    float: right;
+    /* float: right; */
     display: block;
-    padding: 68px 44px 0 42px;
+    margin-left: 405px;
+    padding: 68px 50px 0 45px;
 }
 .register-body-2 .from-mobile input{
-    width: 271px;
+    width: 262px;
     margin-left: 30px;
 }
 .register-body-2 .bd-upload {
@@ -387,7 +413,7 @@ input {
     position: relative;
     vertical-align: 5px;
     margin-left: 5px;
-    width: 136px;
+    width: 131px;
 }
 .register-body-2 .bd-upload__input {
     display: block;
@@ -433,6 +459,8 @@ input {
     color: #2f2f2f;
     background-color: #f1b238;
     border-color: #f1b238;
+    font-weight: bold;
+    font-size: 16px;
 }
 .register-body-2 span.item-2{
     text-align: right;
@@ -462,8 +490,8 @@ input {
     width: 481px;
     height: 463px;
     background: url(../img/login/frame.png) no-repeat;
-    float: right;
-    padding: 100px 44px 0 42px;
+    margin-left: 405px;
+    padding: 100px 50px 0 45px;
 }
 .login-body ul{
     margin-bottom: 24px;
