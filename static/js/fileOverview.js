@@ -29,14 +29,14 @@
             var value = self.parents("ul").find('.username').val();
             var type = self.data('type');
             if(value == ''){
-                self.parents("ul").find('.username').parent().find('.err-tip').html('手机号码不能为空').show();
+                self.parents("ul").find('.username').parent().find('.err-tip').html('邮箱地址不能为空').show();
               return;
             }
-            if (!/^1[3|4|5|6|7|8|9]\d{9}$/.test(self.parents("ul").find('.username').val())){
-                self.parents("ul").find('.username').parent().find('.err-tip').html('请输入正确手机号').show();
+            if (!/^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/.test(self.parents("ul").find('.username').val())){
+                self.parents("ul").find('.username').parent().find('.err-tip').html('请输入正确邮箱地址').show();
               return;
             }
-
+            self.parents("ul").find('.username').parent().find('.err-tip').html('').hide();
             _disable();
             _start();
             $.ajax({

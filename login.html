@@ -27,18 +27,18 @@
             <div class="pimg fl">
                 <img src="./static/img/login/lefto.png" alt="" width="466" height="455">
             </div>
-            <div class="login-body con-body"  style="display: none">
+            <div class="login-body con-body">
                 <ul>
                     <li class="from-item from-email">
                         <i></i>
                         <span>账号:</span>
-                        <input type="text" class="email" placeholder="邮箱地址">
+                        <input type="text" class="username" id="username_a" placeholder="邮箱地址">
                         <div class="err-tip"></div>
                     </li>
                     <li class="from-item from-pass">
                         <i></i>
                         <span>密码:</span>
-                        <input type="password" class="password" placeholder="请输入密码">
+                        <input type="password" class="password" id="password_a" placeholder="请输入密码">
                         <div class="err-tip"></div>
                     </li>
                 </ul>
@@ -61,12 +61,13 @@
                     </a>
                 </div> 
             </div>
-            <div class="forget-body con-body" style="display: none">
+            <!--忘记密码1---->
+            <div class="forget-body forget-body-com con-body" style="display: none">
                 <ul>
                     <li class="from-item from-email">
                         <i></i>
                         <span>&nbsp;&nbsp;&nbsp;邮箱:</span>
-                        <input type="text" class="email" id="username_c" placeholder="注册使用的邮箱">
+                        <input type="text" class="username" id="username_c" placeholder="注册使用的邮箱">
                         <div class="err-tip"></div>
                     </li>
                     <li class="from-item from-smscode mt49">
@@ -80,31 +81,55 @@
                 <a href="javascript:;" class="btn" id="_js_ChangePWD">下一步</a>
                 <a href="javascript:;" class="fh_home _js_go_login" id="">返回登陆页</a>
             </div>
-            <div class="register-body-1 con-body"  style="display: none">
+            <!--忘记密码2---->
+            <div class="forget-body-1 forget-body-com con-body"  style="display: none">
                 <ul>
                     <li class="from-item from-email">
                         <i></i>
-                        <span>邮箱:</span>
-                        <input type="text" class="username" placeholder="请输入邮箱地址">
+                        <span>邮箱:<span class="username" id="username_b"></span></span>
                         <div class="err-tip"></div>
                     </li>
-                    <li class="from-item from-pass">
+                    <li class="from-item from-pass mt8">
                         <i></i>
                         <span>密码:</span>
-                        <input type="text" class="password" placeholder="输入密码">
+                        <input type="password" class="password1" id="password1_b" placeholder="输入密码">
                         <div class="err-tip"></div>
                     </li>
                     <li class="from-item from-pass">
                         <i></i>
                         <span>确认:</span>
-                        <input type="text" class="password" placeholder="确认密码">
+                        <input type="password" class="password2" id="password2_b"  placeholder="确认密码">
+                        <div class="err-tip"></div>
+                    </li>
+                </ul>
+                <a href="javascript:;" class="btn" id="_js_ChangePWD1">完成</a>
+                <a href="javascript:;" class="fh_home _js_go_login" id="">返回登陆页</a>
+            </div>
+            <div class="register-body-1 con-body"  style="display: none">
+                <ul>
+                    <li class="from-item from-email">
+                        <i></i>
+                        <span>邮箱:</span>
+                        <input type="text" class="username" id="username_d" placeholder="请输入邮箱地址">
+                        <div class="err-tip"></div>
+                    </li>
+                    <li class="from-item from-pass">
+                        <i></i>
+                        <span>密码:</span>
+                        <input type="password" class="password" id="password1_d" placeholder="输入密码">
+                        <div class="err-tip"></div>
+                    </li>
+                    <li class="from-item from-pass">
+                        <i></i>
+                        <span>确认:</span>
+                        <input type="password" class="password" id="password2_d" placeholder="确认密码">
                         <div class="err-tip"></div>
                     </li>
                 </ul>
                 <a href="javascript:;" class="btn" id="_js_RegStep1">下一步</a>
                 <a href="javascript:;" class="fh_home _js_go_login" id="">已有账号，去登陆</a>
             </div>
-            <div class="register-body-2 con-body"  style="display: block">
+            <div class="register-body-2 con-body"  style="display: none">
                 <ul>
                     <li class="from-item from-mobile">
                         <i></i>
@@ -130,7 +155,6 @@
                 </div>
                 <a href="javascript:;" class="btn" id="_js_RegStep2">完成注册</a>
                 <a href="javascript:;" class="fh_home _js_go_login">已有账号，去登陆</a>
-                
             </div>
         </div>
     </div>

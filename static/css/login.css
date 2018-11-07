@@ -34,6 +34,9 @@ body,p,div {
     word-break: break-all;
     word-wrap: break-word
 }
+.mt8{
+    margin-top: 8px !important
+}
 .ml92{
     margin-left: 92px;
 }
@@ -277,15 +280,7 @@ input {
 }
 
 
-.forget-body {
-    width: 985px;
-}
-
-.forget-body .pimg{
-
-}
-
-.forget-body{
+.forget-body-com{
     width: 481px;
     height: 487px;
     background: url(../img/login/forget_frame.png) no-repeat;
@@ -293,8 +288,11 @@ input {
     margin-left: 405px;
     padding: 100px 50px 0 45px;
 }
-.forget-body .from-email input{
+.forget-body-com .from-email input{
     width:269px;
+}
+.forget-body-1  .from-email input{
+    width:291px;
 }
 .con-body ul{
     margin-bottom: 65px;
