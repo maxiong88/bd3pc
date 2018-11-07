@@ -380,7 +380,12 @@ input {
     text-align: left;
     display: none;
 }
-
+.register-body-1 .err-tip{
+    left:95px;
+}
+.register-body-2 .from-mobile .err-tip{
+    left: 123px
+}
 .register-body-1{
     width: 481px;
     height: 487px;
@@ -490,6 +495,9 @@ input {
     background: url(../img/login/frame.png) no-repeat;
     margin-left: 405px;
     padding: 100px 50px 0 45px;
+}
+.login-body .err-tip, .forget-body-1 .err-tip{
+    left:93px
 }
 .login-body ul{
     margin-bottom: 24px;

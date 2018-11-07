@@ -115,7 +115,7 @@
   
   $(function() {
     var btnCount = $('.getCheckcode').buttonCount({
-      count: '60',
+      count: '6',
       countTemplate: '在 {count} 秒后重发',
       template: '重新获取',
       autoStart: false,
