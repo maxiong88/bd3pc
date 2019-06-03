@@ -4215,3 +4215,15 @@ a,button,div,input,textarea {
 	display: block;
 	margin: 100px auto;
 }
+
+.tooltip0603{
+	position: absolute;
+	background: rgba(0,0,0,.6);
+	color: #fff;
+	padding: 2px 5px;
+}
+.tooltip0603::after{
+	content: '';
+	position: absolute;
+	
+}
