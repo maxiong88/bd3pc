@@ -4216,14 +4216,24 @@ a,button,div,input,textarea {
 	margin: 100px auto;
 }
 
-.tooltip0603{
+#tooltip0603{
+	position: absolute;
+    top: 0px;
+    left: 0px;
+	width: 100%;
+}
+#tooltip0603 .bd-tooltip{
 	position: absolute;
 	background: rgba(0,0,0,.6);
 	color: #fff;
 	padding: 2px 5px;
+	z-index: 1060;
 }
-.tooltip0603::after{
-	content: '';
-	position: absolute;
-	
+#tooltip0603 .bd-tooltip::after{
+    position: absolute;
+    left: 75px;
+    top: 32px;
+    border-width: 1px 8px 17px 12px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(0,0,0,.6);
 }
