@@ -4226,14 +4226,17 @@ a,button,div,input,textarea {
 	position: absolute;
 	background: rgba(0,0,0,.6);
 	color: #fff;
-	padding: 2px 5px;
+	padding: 0 5px;
+	line-height: 28px;
 	z-index: 1060;
+	border-radius: 5px;
 }
 #tooltip0603 .bd-tooltip::after{
+	content: '';
     position: absolute;
     left: 75px;
-    top: 32px;
-    border-width: 1px 8px 17px 12px;
+    top: 28px;
+    border-width: 0px 2px 13px 11px;
     border-style: solid;
     border-color: transparent transparent transparent rgba(0,0,0,.6);
 }
